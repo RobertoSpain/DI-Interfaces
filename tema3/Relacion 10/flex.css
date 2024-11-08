@@ -1,0 +1,32 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1000px;
+}
+
+/* Imágenes de la galería */
+.gallery-item {
+    flex: 1 1 calc(33.333% - 10px); /* Tres columnas, ajustable automáticamente */
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
